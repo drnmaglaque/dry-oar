@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+}
+
+body a{
+  text-decoration: none;
+}
+
+#hero {
+  background: url('images/rafting06.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  margin-top: -70px;
+}
+
+#hero h1 {
+  color: #E8E8E8;
+  position: relative;
+  top: -20px;
+  left: -250px;
+  font-family: 'Hammersmith One';
+  font-size: 3.5em;
+  letter-spacing: 0px;
+  line-height: 64px;
+}
+
+#hero h1 span {
+  font-size: 0.8em;
+}
+
+#hero #logo {
+  position: relative;
+  top: -20px;
+  left: -300px;
+
+}
+
+.social-nav {
+  position: relative;
+  background: transparent;
+  height: 70px;
+  width: 100%;
+  z-index: 999;
+  /*border: 1px solid red;*/
+}
+
+.social-nav > #logo, #links {
+  display: inline-block;
+  color: #fff;
+}
+
+.social-nav #logo {
+  margin: 25px 0 0px 25px;
+}
+
+.social-nav #links {
+  list-style: none;
+  padding: 25px 25px 0 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.social-nav #links li{
+  display: inline-block;
+  color: #fff;
+  margin-right: 30px;
+}

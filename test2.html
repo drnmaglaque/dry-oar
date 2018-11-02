@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <script>
+    function getLiter() {
+      var textBegin = document.getElementById('inputBegin').value;
+      var textEnd = document.getElementById('inputEnd').value;
+      var textGas = document.getElementById('inputGas').value;
+
+      var odoBegin = parseFloat(textBegin);
+      var odoEnd = parseFloat(textEnd);
+      var gas = parseFloat(textGas);
+
+      var odoTotal = odoEnd - odoBegin;
+      var answer = gas / odoTotal;
+
+      document.getElementById('outputDiv').innerHTML = answer;
+    }
+  </script>
+
+</head>
+<body>
+  <input id="inputBegin" type="text" name="text">
+  <input id="inputEnd" type="text" name="text">
+  <input id="inputGas" type="text" name="text">
+  <button class="get" onclick="getLiter()">Get Liter</button>
+
+  <div id="outputDiv">
+
+  </div>
+
+</body>
+</html>

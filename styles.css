@@ -1,0 +1,580 @@
+/* Universal Selectors */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #FAE5D3;
+  /* background-image: linear-gradient(-90deg, #F5CBA7, #F39237);
+  background-size: cover; */
+}
+
+body a,
+body a:hover {
+  text-decoration: none;
+}
+
+/*BIG HEADER, image, welcome box, social navigation links and the overview description*/
+#hero {
+  background: url('images/rafting06.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  margin-top: 0px;
+}
+
+#hero-about {
+  background: url('images/rafting01.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  margin-top: 0px;
+}
+
+#rivers-hero {
+  background: url('images/rafting01.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  margin-top: 0px;
+}
+
+
+
+/* #hero #logo {
+  position: relative;
+  top: -20px;
+  left: -300px;
+} */
+
+#welcome-box {
+  width: 280px;
+  background: rgba(0, 0, 0, -1.4);
+  color: #fff;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 15px 20px;
+  /* border: 1px solid #FFF; */
+}
+
+.welcome-box-home {
+  top: 55%;
+  left: 30%;
+  position: absolute;
+  text-align: right;
+  /* border-right: 1px solid white; */
+}
+
+.welcome-box-about {
+  top: 50%;
+  right: 10%;
+  position: absolute;
+  border-left: 1px solid white;
+}
+
+#welcome-box h1 {
+  color: #E8E8E8;
+  font-family: 'Permanent Marker';
+  font-size: 3.8em;
+  line-height: 33px;
+  margin-bottom: 25px;
+  line-height: 44px;
+}
+
+#welcome-box h1 span {
+  font-size: 0.3em;
+}
+
+#welcome-box p {
+  margin-bottom: 25px;
+  font-family: "Karla";
+  line-height: 22px;
+}
+
+#welcome-box p span {
+  letter-spacing: 4px;
+  font-size: 1.3em;
+}
+
+/* General Buttons & Welcome Box Button */
+.welcome-btn, .btn1, .btn2, .btn3 {
+  height: 50px;
+  width: 150px;
+  padding: 14px 32px;
+  color: #1E1E1E;
+  border-radius: 4px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Poppins";
+  transition: 0.6s;
+
+  color: #FFF;
+  background-color: #F39237;
+  /* border: 1px solid #F39237; */
+  transition: 0.5s;
+}
+
+
+/* Section Buttons Styles */
+.welcome-btn {
+margin-left: 85px;
+}
+
+.btn1 {
+  padding: 14px 29px;
+  color: #FFF;
+}
+
+.btn2 {
+  margin-left: 240px;
+  padding: 14px 46px;
+  color: #FFF;
+}
+
+.btn1:hover,
+.btn2:hover,
+.btn3:hover,
+.welcome-btn,
+.btn3 {
+  color: #FFF;
+  background-color: #F39237;
+  transition: 0.5s;
+}
+
+/* Social Navigation on Welcome Box*/
+.social-nav {
+  height: 40px;
+  width: 180px;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 15px;
+  padding-top: 4px;
+}
+
+.social-nav ul {
+  list-style: none;
+}
+
+.social-nav ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.social-nav ul li:first-of-type {
+  margin-left: 0px;
+}
+
+/* Main Navigation Bar at TOP*/
+.main-nav-container {
+  background-color: #FBFBFB;
+  height: 80px;
+  width: 100%;
+  padding: 5px 20px;
+  margin: 0 0 50px 0;
+  position: relative;
+}
+
+.main-nav {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0px 50px;
+  padding-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  position: relative;
+  margin-top: -120px;
+}
+
+.main-nav ul {
+  list-style: none;
+}
+
+.main-nav li {
+  color: #fff;
+  display: inline-block;
+  font-family: "Poppins";
+  font-size: 1.1em;
+  margin: 0 4px;
+}
+
+.main-nav li:first-of-type {
+  margin-left: 40px;
+}
+
+.main-nav li a {
+  color: #39A9DB;
+  transition: 0.3s;
+  padding-bottom: 4px;
+  border-radius: 0px;
+  margin: 0 15px;
+}
+
+.main-nav li a:hover, .main-nav .selected, .footer-nav .selected {
+  text-decoration: none;
+  color: #2660A4;
+  font-weight: bold;
+  border-bottom: 1px solid orange;
+  transition: 0.2s;
+}
+
+.logo {
+  margin-left: 80px;
+  margin-top: -30px;
+  height: 150px;
+  width: 150px;
+  padding-left: 8px;
+  z-index: 999;
+  position: relative;
+}
+
+.logo-about {
+  margin-left: 80px;
+  margin-top: 30px;
+  height: 150px;
+  width: 150px;
+  padding-left: 8px;
+  z-index: 999;
+  position: relative;
+}
+
+header > span.shadow {
+  background: url(images/shadows.png) repeat-x;
+  background-position: 0 -20px;
+  display: block;
+  height: 8px;
+  width: 100%;
+  position: absolute;
+  bottom: -88px;
+  z-index: 999;
+}
+
+/* Main, Sections and Contents */
+/* Page Container */
+#page {
+  width: 960px;
+  background-color: transparent;
+  margin: 0 auto;
+  padding: 0px 0px;
+}
+
+/* Sections on the main Content */
+/* General */
+.section-1, .section-2, .section-3 {
+  width: 100%;
+  background-color: #AED6F1;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 150px 0;
+  box-shadow: 10px 10px 8px #888888;
+  /* border: 1px solid #000; */
+}
+
+.section-1 {
+  margin-top: 100px;
+  /* background: url(logos/dry-oar09.png) no-repeat;
+  background-position: right;
+  background-size: auto;
+  background-blend-mode: lighten; */
+}
+
+.section-2 {
+  background-color: #F2F3F4;
+  box-shadow: -10px 10px 8px #888888;
+  border: 1px solid #000;
+
+}
+
+.bg-logo {
+  width: 60px;
+  height: 60px;
+  /* position: relative;
+  top: 20px;
+  float: right;
+  z-index: 0; */
+  display: inline-block;
+  float: left;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+/* General styles for both columns within the section */
+.first-col, .second-col {
+  width: 450px;
+  display: inline-block;
+  margin: 0 5px;
+  padding: 30px 30px;
+}
+
+/* Columns with text and the text styles */
+.col-desc {
+  padding: 30px
+}
+
+/* Headings */
+.col-desc h2 {
+  width: 230px;
+  font-size: 1.8em;
+  color: #1C77C3;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  font-weight: normal;
+  font-family: "Permanent Marker";
+  margin-bottom: 20px;
+}
+
+/* Section 2 is different from sections 1 and 3 because the style is different from the two previous sections */
+/* Alignment, background color,  */
+
+.section-2-p p, .section-2-p h2 {
+  text-align: right;
+}
+
+.section-2-p h2 {
+  width: 190px;
+  padding-bottom: 4px;
+  font-weight: bold;
+  margin-left: 200px;
+  color: #1C77C3;
+}
+
+/* Doing this because the heading in section 3 is very long */
+.section-3-p h2 {
+  width: 270px;
+}
+
+/* General Selectors for the paragraph texts within the columns */
+.col-desc p {
+  color: #494949;
+  font-family: "Karla";
+  font-weight: lighter;
+  margin-bottom: 44px;
+}
+
+/* Section Pictures */
+/* The ground on which they stand */
+.col-pic {
+  background-color: #D8D8D8;
+  height: 365px;
+  /* Position relative is necessary for the pictures to hook themselves with their respective containers */
+  position: relative;
+}
+
+/* Positioning of the pictures */
+.sect-1-pic, .sect-2-pic, .sect-3-pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Footer Designs*/
+#footer {
+  border-top: 15px solid #2660A4;
+  background-color: #F19953;
+  width: 100%;
+  /* Once again, this element makes it necessary to use position absolute for it to stretch across the whole page and not be restricted */
+  position: absolute;
+  left: 0;
+  margin: 40px 0 0px 0;
+  padding: 20px 0;
+  padding-bottom: 0;
+}
+
+#footer-container {
+  width: 100%;
+  padding: 0px 20px;
+  /* Used display flex for easy positioning */
+  display: flex;
+  justify-content: center;
+}
+
+#footer section {
+  width: 150px;
+  margin: 0 50px;
+  padding: 10px;
+  margin-bottom: 0px;
+}
+
+#footer section h6 {
+  font-size: 0.8em;
+  margin-bottom: 15px;
+  font-family: "Raleway";
+  color: #56351E;
+  text-transform: uppercase;
+}
+
+.footer-nav {
+  list-style: none;
+}
+
+.footer-nav li {
+  font-size: 11px;
+  margin-bottom: 9px;
+}
+
+.footer-nav li a {
+  text-decoration: none;
+  color: #fbfbfb;
+  transition: 0.3s;
+  font-family: "Poppins";
+}
+
+.footer-nav li a:hover {
+  text-decoration: none;
+  color: #2660A4;
+  font-weight: bold;
+}
+
+.footer-social-links li {
+  display: inline-block;
+  margin-left: 14px;
+}
+
+.footer-social-links li:first-of-type {
+  margin-left: 0;
+}
+
+#credit {
+  font-size: 9px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ------------------------------------------------------------About Page */
+
+#about-main {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 150px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-team {
+  width: 300px;
+  padding: 10px;
+  margin: 0 5px;
+  font-family: "Karla";
+}
+
+.about-team img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.about-team h3 {
+  margin-bottom: 5px;
+}
+
+#river1-pic,
+#river2-pic,
+#river3-pic {
+  background-color: #F19953;
+  width: 100%;
+  height: 600px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index:101;
+  padding: 0 30px;
+  padding-top: 50px;
+  margin-bottom: 100px;
+}
+
+#river1-pic {
+  margin-top: 100px;
+}
+
+#river1-desc,
+#river2-desc {
+  width: 960px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+#river1-pic::before,
+#river1-pic::after,
+#river2-pic::before,
+#river2-pic::after,
+#river3-pic::before,
+#river3-pic::after {
+  position: absolute;
+  content: '';
+  width: 150px;
+  height: 150px;
+  background: #F19953;
+  bottom: -1.7em;
+  z-index: 100;
+}
+
+#river1-pic::before,
+#river2-pic::before,
+#river3-pic::before {
+  right: 50%;
+  transform: skew(0, 20deg);
+  
+}
+
+#river1-pic::after,
+#river2-pic::after,
+#river3-pic::after {
+  left: 50%;
+  transform: skew(0, -20deg);  
+}
+ 
+.river1-left,
+.river2-left,
+.river3-left {
+  /* border: 1px solid red; */
+  width: 48%;
+  height: 400px;
+  float: left;
+  margin-right: 20px;
+} 
+
+.river1-left img,
+.river2-left img,
+.river3-left img {
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0% 0%, 100% 0%, 88% 99%, 1% 100%);
+}
+
+.river1-right,
+.river2-right,
+.river3-right {
+  padding: 0px;
+}
